@@ -1,0 +1,7 @@
+{
+  "name": "frostgrave",
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6",
+    "jquery": "^2.2.3"
+  }
+}

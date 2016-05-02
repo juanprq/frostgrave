@@ -14,9 +14,15 @@ defmodule Frostgrave.Router do
   end
 
   scope "/", Frostgrave do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
+  end
+
+  scope "/admin", Frostgrave do
+    pipe_through :browser
+
+    resources "/items", ItemController
   end
 
   # Other scopes may use custom stacks.

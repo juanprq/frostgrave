@@ -1,53 +1,51 @@
-## This file is a PO Template file. `msgid`s here are often extracted from
-## source code; add new translations manually only if they're dynamic
-## translations that can't be statically extracted. Run `mix
-## gettext.extract` to bring this file up to date. Leave `msgstr`s empty as
-## changing them here as no effect; edit them in PO (`.po`) files instead.
-## From Ecto.Changeset.cast/4
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: es\n"
+
 msgid "can't be blank"
-msgstr ""
+msgstr "No puede estar vacio"
 
-## From Ecto.Changeset.unique_constraint/3
 msgid "has already been taken"
-msgstr ""
+msgstr "Ya ha sido tomado"
 
-## From Ecto.Changeset.put_change/3
 msgid "is invalid"
-msgstr ""
+msgstr "Es inválido"
 
-## From Ecto.Changeset.validate_format/3
 msgid "has invalid format"
-msgstr ""
+msgstr "El formato es inválido"
 
-## From Ecto.Changeset.validate_subset/3
 msgid "has an invalid entry"
-msgstr ""
+msgstr "Es una entrada no válida"
 
-## From Ecto.Changeset.validate_exclusion/3
 msgid "is reserved"
-msgstr ""
+msgstr "Ya se encuentra reservada"
 
-## From Ecto.Changeset.validate_confirmation/3
 msgid "does not match confirmation"
-msgstr ""
+msgstr "No concuerda con la confirmación"
 
-## From Ecto.Changeset.no_assoc_constraint/3
 msgid "is still associated to this entry"
-msgstr ""
+msgstr "Se encuentra asociada con la entrada"
 
 msgid "are still associated to this entry"
-msgstr ""
+msgstr "Se entran asociadas a esta entrada"
 
-## From Ecto.Changeset.validate_length/3
 msgid "should be %{count} character(s)"
 msgid_plural "should be %{count} character(s)"
-msgstr[0] ""
+msgstr[0] "Deben ser "
 msgstr[1] ""
 
 msgid "should have %{count} item(s)"
 msgid_plural "should have %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Debe tener más de %{count} elemento(s)"
+msgstr[1] "Debe tener más de %{count} elemento(s)"
 
 msgid "should be at least %{count} character(s)"
 msgid_plural "should be at least %{count} character(s)"
@@ -69,7 +67,6 @@ msgid_plural "should have at most %{count} item(s)"
 msgstr[0] ""
 msgstr[1] ""
 
-## From Ecto.Changeset.validate_number/3
 msgid "must be less than %{count}"
 msgid_plural "must be less than %{count}"
 msgstr[0] ""

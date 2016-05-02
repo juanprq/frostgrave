@@ -1,0 +1,66 @@
+<div class="section">
+  <h2 class="teal-text">
+    Listado de ítems
+  </h2>
+</div>
+
+<%= if Enum.empty?(@items) do %>
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        <p class="caption">
+          No hay endiñes para items
+        </p>
+      </div>
+    </div>
+  </div>
+<%= else %>
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>
+                ID
+              </th>
+              <th>
+                Nombre
+              </th>
+              <th>
+                Mágico
+              </th>
+              <th>
+                Solo boveda
+              </th>
+              <th>
+                Precio de compra
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= for item <- @items do %>
+              <tr>
+                <td>
+                  <%= item.id %>
+                </td>
+                <td>
+                  Falta
+                </td>
+                <td>
+                  <%= item.magic %>
+                </td>
+                <td>
+                  <%= item.vault_only %>
+                </td>
+                <td>
+                  <%= item.purchase_price %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<% end %>
